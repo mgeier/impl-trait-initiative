@@ -48,7 +48,7 @@ Using `impl Trait`, we can still have a type alias `OddIntegers`, but we can avo
 ```rust
 mod odd {
     pub type OddIntegers = impl Iterator<Item = u32>;
-    //                 ^^^^^^^^^^^^^^^^^^^^^^^^^ :tada:!
+    //                     ^^^^^^^^^^^^^^^^^^^^^^^^^ :tada:!
 
     pub fn odd_integers(mut start: u32, stop: u32) -> OddIntegers {
         if (start % 2) == 0 {
